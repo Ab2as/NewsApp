@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+import 'package:news_app/screens/home_screen.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+    );
+  }
+}
+
+//adding the depency "carousel_slider: ^4.1.1" after cupertino icons
+//after that run "flutter pub get" in terminal
